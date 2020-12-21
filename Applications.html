@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="irstheme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> GMP India Pvt. Ltd. </title>
+    <link rel="icon" href="assets/images/favicon.png" />
+    
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+  <script type="text/javascript"> 
+    function sendEmail() { 
+	var name=document.getElementById("name").value; 
+	var email=document.getElementById("email").value; 
+	var phone=document.getElementById("phone").value; 
+    var body=document.getElementById("note").value; 
+    var organization=document.getElementById("Organization").value; 
+    var e = document.getElementById("ddlproduct");
+var strProduct = e.options[e.selectedIndex].value;
+	var isValidate=true;
+	if(name==""){isValidate=false;}
+	if(email==""){isValidate=false;}
+    if(phone==""){isValidate=false;}
+    if(organization==""){isValidate=false;}
+    if(strProduct==""){isValidate=false;}
+	if (isValidate){
+      Email.send({ 
+        Host: "smtp.gmail.com", 
+        Username: "marketing@gmpindiapl.com", 
+        Password: "zzxynkgwgfeqrywa", 
+        To: 'marketing@gmpindiapl.com,info@gmpindiapl.com', 
+        From: "marketing@gmpindiapl.com", 
+        Subject: "Online Enquiry !!!", 
+        Body: "Hello Team,<br><br> You have below online visit details <br><br> Name : "+name +" <br><br> Email:"+email+"<br><br> Phone: "+phone+" <br><br> Organization:"+organization+" <br><br> Content:"+body+"<br><br> Product : "+strProduct
+      }) 
+        .then(function (message) { 
+          alert("Mail has been sent successfully") 
+        }); 
+		}
+    } 
+  </script>
+    <script> 
+        function newLocation() { 
+
+            window.location.href="page.html"; 
+        } 
+      </script>
+</head>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+
+       
+
+
+        <!-- Start header -->
+        <header id="header" class="site-header header-style-1" style="background-color: #367596;">
+            <nav class="navigation navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="open-btn">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                       <a class="navbar-brand" href="index.html"><img src="assets/images/Gomatee/GMP_LOGO_White.jpg" alt></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                        <button class="close-navbar"><i class="ti-close"></i></button>
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a  href="index.html">Home</a>
+                                
+                            </li>
+                            
+                            <li class="menu-item-has-children">
+                                <a >About Us</a>
+                                <ul class="sub-menu">
+                                    <li><a href="about.html#aboutus">About Us</a></li>
+                                    <li><a href="Mission.html#Mission">Our Mission | Vision | Values</a></li>
+                                    <li><a href="Cerftificates.html#Cerftificates">Certificates & Memberships</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a >Quality</a>
+                                <ul class="sub-menu">
+                                    <li><a href="Quality.html">Quality</a></li>
+                                    <li><a href="LabInstrument.html#Lab">Lab Instuments</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Products</a>
+                                <ul class="sub-menu">
+                                    <li><a href="AtomisedIronPowder.html">Atomised Iron Powder</a></li>
+                                    <li><a href="AtomisedReducedIronPowder.html">Atomised Reduced Iron Powder</a></li>
+                                    <li><a >Atomised Brass Powder</a></li>
+                                    <li><a >Atomised Bronze Powder</a></li>
+                                    <li><a >Atomised Copper Powder</a></li>
+                                    <li><a >Pre-alloyed Metal Powder</a></li>
+                                </ul>
+                            </li>
+                            <li >
+                                <a style="color:#ff5609;"href="Applications.html">Applications</a>
+                                
+                            </li>
+                            
+                            <li >
+                                <a href="Packaging.html">Packaging</a>
+                                
+                            </li>
+                            <li >
+                                <a href="ExpertTeam.html">Expert Team</a>
+                                
+                            </li>
+                            
+                            <li >
+                                <a href="Support.html">Support</a>
+                                
+                            </li>
+                            <li><a href="contact.html#Contactusmap">Contact Us</a></li>
+                        </ul>
+                    </div><!-- end of nav-collapse -->
+
+                    <div class="search-contact">
+                        <div class="header-search-area">
+                            <div class="header-search-form">
+                                <form class="form">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="Search here">
+                                    </div>
+                                    <button type="submit" onclick="newLocation()" class="btn"><i class="ti-search"></i></button>
+                                </form>
+                            </div>
+                            <div>
+                                
+                                <button class="btn open-btn"><i class="ti-search"></i></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div><!-- end of container -->
+            </nav>
+        </header>
+        <!-- end of header -->
+
+
+        <!-- start of hero -->
+        <section class="hero-slider hero-style-1">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/Gomatee/Collarge/01.jpg">
+                            
+                        </div> <!-- end slide-inner --> 
+                    </div> <!-- end swiper-slide -->
+
+
+                   
+                </div>
+                <!-- end swiper-wrapper -->
+
+                <!-- swipper controls -->
+                
+            </div>
+        </section>
+        <!-- end of hero slider -->
+
+        <!-- start featured-project-section-s2 -->
+        <section class="featured-project-section-s2 section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+                        <div class="section-title-s5">
+                            
+                            <h2>Applications</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="project-grids featured-project-slider clearfix">
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/1.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>PM&nbsp;/&nbsp;Sinter</h3>
+                            <p>Powder Metallurgy Technology</p>
+                            <br>
+                            <a href="Sinter.html" class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/6.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>Friction</h3>
+                            <p>Brakes & Clutches Industry</p>
+                            <br>
+                            <a href="Friction.html  " class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/5.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>Metal Working</h3>
+                            <p>Products for Cutting, Welding, Surface Treating</p>
+                            <a href="MetalWorking.html" class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/8.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>Carbon Brushes</h3>
+                            <p>Moving & Rotating Contacts</p>
+                            <br>
+                            <a href="CarbonBrushes.html" class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="project-grids featured-project-slider clearfix">
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/4.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>Diamond Tools</h3>
+                            <p>Cutting Stones & Hard Materials.</p>
+                            <br>
+                            <a href="DiamondTools.html" class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/9.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>Oxygen Absorber</h3>
+                            <p>For food preservation</p>
+                            <br>
+                            <a href="OxygenAbsorber.html" class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/2.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>Chemical</h3>
+                            <p>Metal powder for Chemical Industry</p>
+                            <br>
+                            <a href="Chemical.html" class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/3.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>Hand Warmer</h3>
+                            <p>Iron Metal Powder sachets used as hand warmer.</p>
+                            <a href="HandWarmer.html" class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="project-grids featured-project-slider clearfix">
+                    
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/Gomatee/ApplicationVImages/7.jpg" alt>
+                        </div>
+                        <div class="overlay">
+                            
+                            <h3>Water Treatment</h3>
+                            <p>Iron powder used for water purification.</p>
+                            <a href="WaterTreatment.html" class="theme-btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        
+                    </div>
+                    <div class="grid">
+                        
+                    </div>
+                    <div class="grid">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- end featured-project-section-s2 -->
+
+
+
+       <!-- start site-footer -->
+       <footer class="site-footer">
+        <div class="upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-5 col-sm-6">
+                        <div class="widget about-widget">
+                            <div class="footer-logo"><img width="65%" src="assets/images/Gomatee/GMP_LOGO_White.jpg" alt></div>
+                            <ul class="contact-info">
+                                <li><i class="fa fa-home fa-5x" style="font-size: 28px;"></i><b style="font-size: 18px;"> Gomatee Metallic Powders India Pvt. Ltd.</b></li>
+                                <li> Gat no. 259, Bhondvewadi road, Bhondvewadi,
+                                    Tal- Baramati, Dist- Pune – 412204.</li>
+                                <li><i class="fa fa-phone" style="font-size: 28px;"></i> <a style="font-size:20px;" href="telto:+918956739113">+91 8956739113</a>&nbsp;&nbsp;<b style="font-size:26px;">|</b> <a style="font-size:20px;" href="telto:+918956739117">&nbsp;+91 8956739117</a></li>
+                                <li><i class="fa fa-envelope" style="font-size: 24px;"></i>  <a style="font-size:18px;" href="mailto:info@gmpindiapl.com">info@gmpindiapl.com</a> <b style="font-size:26px;">|</b> <a style="font-size:18px;" href="mailto:marketing@gmpindiapl.com">marketing@gmpindiapl.com</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col col-md-3 col-sm-6">
+                        <div class="widget quick-links-widget">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a  href="index.html">Home</a></li>
+                                    <li><a  href="about.html">About Us</a></li>
+                                    <li><a  href="Quality.html">Quality</a></li>
+                                    <li><a  href="AtomisedIronPowder.html">Products</a></li>
+                                    <li><a   href="Applications.html">Applications</a></li>
+                            </ul>
+                            <ul>
+                                <li><a  href="Packaging.html">Packaging</a></li>
+                                    <li><a  href="ExpertTeam.html">Expert Team</a></li>
+                                    <li><a  href="Support.html">Support</a></li>  
+                                    <li><a  href="contact.html">Contact Us</a></li>  
+                            </ul>
+                        </div><br><br>
+                        <div >
+                            <h3 style="color: #fff;">FOLLOW US</h3>
+                            <div >
+                                <ul style="display: flex;">
+                                    <li style="padding: 5px;"><a href="https://www.facebook.com/gmpindipl/"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                                    <li style="padding: 5px;"><a href="https://twitter.com/GomateeLtd"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+                                    <li style="padding: 5px;"><a href="https://www.linkedin.com/in/gomatee-metallic-powders-india-pvt-ltd-9203311ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9j94EPfcQye2ni1wd41uGQ%3D%3D"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+                                    <!-- <li style="padding: 5px;"><a href="https://www.facebook.com/gmpindipl/settings/?tab=instagram_management&ref=page_edit"><i class="fa fa-instagram fa-3x"></i></a></li> -->
+                                </ul>
+                                <br>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-md-4 col-sm-6">
+                        <div class="widget twitter-feed-widget">
+                            <h3>Request A Quote</h3>
+                            <form method="post" class="contact-validation-active" id="contact-quote-form">
+                                <div >
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name*">
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email*">
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
+                                </div >
+                                <div style="margin-top: 15px;">
+                                    <input type="text" class="form-control" name="Organization" id="Organization" placeholder="Organization*">
+                                </div >
+                                <div style="margin-top: 15px;">
+                                    <select name="subject" id="ddlproduct" placeholder="Requirement" class="form-control">
+                                        <option value="" disabled selected hidden>Select Product</option>
+                                        <option>Atomised Iron Powder</option>
+                                        <option>Atomised Reduced Iron Powder</option>
+                                        <option>Atomised Brass Powder</option>
+                                        <option>Atomised Bronze Powder</option>
+                                        <option>Atomised Copper Powder</option>
+                                        <option>Pre-alloyed Metal Powder</option>
+                                    </select>
+                                </div>
+                                <div style="margin-top: 15px;">
+                                    <textarea class="form-control" name="note"  id="note" placeholder="Description..."></textarea>
+                                </div>
+                                <div class="submit-area" style="margin-top: 15px;display: grid;">
+                                    <button type="submit" onclick="sendEmail()" class="theme-btn">Get a quote</button>
+                                    <div id="loader">
+                                        <i class="ti-reload"></i>
+                                    </div>
+                                </div>
+                                <div class="clearfix error-handling-messages">
+                                    <div id="success">Thank you</div>
+                                    <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end upper-footer -->
+        <div class="copyright-info">
+            <div class="container">
+                <p><a target="_blank" href="http://srinfotechno.com/">Developed by SR Infotech</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- end site-footer -->
+
+
+    </div>
+    <!-- end of page-wrapper -->
+
+
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins for this template -->
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+<!-- dustech/services.html  13 Nov 2019 12:55:44 GMT -->
+</html>
